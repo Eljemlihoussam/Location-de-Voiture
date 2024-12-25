@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  
+}
+
+.bar{
+    
+    height: 50px;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+   
+    
+
+  
+}
+.fa-right-to-bracket:hover{
+  color: rgb(38, 50, 156);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 170, 255);
+}
+ul li {
+    display: inline;
+    padding: 20px;
+    
+}
+ul span {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+a:hover,a:active{
+    color:rgb(27, 172, 216);
+    text-decoration-line:underline;
+    text-decoration-color: rgb(0, 170, 255);
+    cursor: pointer;
+    
+}
+
+.title a img{
+    
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+a {
+    text-decoration-line: none;
+    color: #2068e5;
+}
+
+
+
+/************************************** wail ******************/
+
+
+.slider-main{
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  
+}
+
+.slider-container {
+  
+    width:70%;
+    margin: auto;
+    height: 400px;
+    
+    overflow: hidden;
+    position: relative;
+    background-color: #333333;
+    
+  }
+  
+  .slides {
+    
+    
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+  }
+  .slide img{
+    width: 100%;
+    height: auto;
+  }
+ 
+  
+  
+  
+  
+  .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  /***************************** ************************/
+  #container{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    
+    border: solid black 2px;
+    background-color: #4ebfe2;
+    border-radius: 8%;
+
+}
+#content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align:center;
+   
+    
+}
+#content>div{
+    border: solid rgba(0, 0, 0, 0) 2px;
+    border-radius: 8px;
+    background-color: #74cbf445;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: 30px;
+}
+#content>div i {
+  color: #5a55ec;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+h4{
+    color:black;
+    margin-bottom: 10px;
+}
+
+/************************** ***********************/
+.Voiture{
+  width:70%;
+  margin: auto;
+  
+}
+
+.car-list {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  overflow-x: auto; /* Activer le défilement horizontal */
+  padding: 20px;
+  white-space: nowrap; /* Empêcher le retour à la ligne des éléments flex */
+  scrollbar-width: none;
+  
+}
+
+.car-item {
+  flex: 0 0 auto; /* Désactive la flexibilité pour chaque élément */
+  width: 300px;
+  height: 300PX;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-right: 20px;
+  display: inline-block; /* Afficher les éléments en ligne */
+}
+
+.car-item img {
+  
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity:0.8;
+  
+}
+.car-item>img:hover{
+  transform: scale(1.5);
+  
+  opacity: 1;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.car-details {
+  padding: 20px;
+}
+
+.car-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.car-features {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.car-features  {
+  color: #666666;
+  margin-bottom: 8px;
+}
+.car-features p img{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .car-item {
+    width: 100%; /* Afficher chaque voiture sur une seule colonne sur les*/
+  }
+}
+footer{
+height: 20%;
+width: 100%;
+background-color: #333333;
+bottom: 0%;
+
+
+
+}
+.apropos {
+padding-top: 10px;
+
+display: flex;
+
+flex-direction: row;
+justify-content: space-around;
+}
+.fa-gas-pump{
+color:rgb(183, 144, 16);
+}
+.fa-person{
+color: rgb(19, 88, 148);
+}
+.fa-snowflake{
+color: rgb(111, 200, 236);
+}
+.car-features p img {
+
+float: left;
+}
+.car-features p {
+margin-top: 4px;
+}
+/************************************************************** partie de voiture  ************************/
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+
+.container form{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 30px;
+gap:2rem;
+border-radius: 10px;
+background-color: #89CFF0;
+width:70%;
+}
+.inputtext{
+display: flex;
+flex-direction: column;
+
+}
+.inputtext span{
+font-weight: 700;
+color: #7B68EE;
+}
+.inputtext input{
+background-color: #F5F5F5;
+border: none;
+outline: none;
+padding: 10px;
+}
+button{
+font-weight: 500;
+border-radius: 5px;
+padding: 10px 15px;
+font-size: 1rem;
+background-color: #EFC050;
+}
+
+button:hover{
+background: #eaa30b ;}

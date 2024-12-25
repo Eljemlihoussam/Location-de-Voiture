@@ -1,0 +1,192 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color:#363062;
+    --second-color:#F3F8FF;
+    --text-color:#444;
+    --gradient: linear-gradinet(#F6F5F2,#F3D0D7);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line:none;
+    background-color: #dad7d7ef;
+    justify-content: space-around;
+    z-index: 1;
+}
+.logo img {
+    width: 100px;
+
+}
+.navbar {
+    display: flex;
+}
+.navbar li{
+    position: relative;
+    display: inline;
+    text-decoration-line: none;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.navbar a::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    background-color: var(--second-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition:0.3s ;
+}
+.navbar a:hover::after{
+    width: 90%;
+    margin: auto;
+}
+
+header .icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+.btn-login a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration-line: none;
+}
+.btn-login .sign-in{
+    background: #474fa0;
+    color: #fff;
+    
+    border-radius: 0.5rem;
+}
+
+.btn-login .sign-in:hover{
+    background: var(--main-color);
+    color: var(--second-color);
+}
+
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    background: url(voiture.jpg);
+    background-position: center right;
+    background-size:cover;
+    display: grid;
+    align-items: center;
+    
+    
+    
+
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color:#97979d;
+}
+.text span{
+    color: var(--main-color);
+    
+
+}
+.text p{
+    margin: 0.5rem ;
+    color: var(--second-color);
+}
+.text{
+    margin-left: 4rem;
+}
+.sociaux {
+    display: flex;
+}
+.sociaux a{
+    padding: 10px;
+    font-size: 2.3rem;
+    border-radius: 2px solid var(--main-color);
+}
+.fa-instagram{
+    color: rgb(212, 45, 53);
+    border-radius: 100%;
+    background-color: #f9f9f9e3;
+}
+.fa-facebook{
+    color: rgb(16, 16, 203);
+    border-radius: 100%;
+    background-color: #e6e6ec;
+}
+.sociaux a .fa-instagram:hover,.fa-facebook:hover {
+    opacity: 0.6;
+    background-color: #e6e6ec;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap:2rem;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    width:70%;
+}
+.inputtext{
+    display: flex;
+    flex-direction: column;
+    
+}
+.inputtext span{
+    font-weight: 700;
+    color: #7B68EE;
+}
+.inputtext input{
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+button{
+    font-weight: 500;
+    border-radius: 5px;
+    width: 120px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color:#ECF9FF;
+}
+
+button:hover{
+    background: var(--main-color) ;
+    color: var(--second-color);
+    cursor: pointer;
+    transition: 0.9s;
+}
+.input input{
+    padding-left: 7px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: var(--second-color);
+    background-color: #4444442a;
+}

@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bar{
+    
+    height: 50px;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+   
+    
+
+  
+}
+.fa-right-to-bracket:hover{
+  color: rgb(38, 50, 156);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 170, 255);
+}
+ul li {
+    display: inline;
+    padding: 20px;
+    
+}
+ul span {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+a:hover,a:active{
+    color:rgb(27, 172, 216);
+    text-decoration-line:underline;
+    text-decoration-color: rgb(0, 170, 255);
+    cursor: pointer;
+    
+}
+
+.title a img{
+    
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+a {
+    text-decoration-line: none;
+    color: #2068e5;
+}
+
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    
+  }
+.comment{
+    height: 500px;
+    width: 100%;
+    background-color: #f1f8fc1d;
+    display: flex;
+    justify-content: space-around;
+}
+.img img{
+    width: 450px;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    
+   
+    
+}
+.barcomment{
+    height:450px;
+    width: 40rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.barcomment input{
+    width: 20rem;
+    margin: 1rem auto;
+    align-items: center;
+    
+}
+.barcomment .input{
+    padding-left: 15px;
+    height: 35px;
+    border-radius: 6px;
+    border-color: #2068e561;
+}
+.barcomment textarea{
+    margin: auto ;
+    width: 400px;
+    height: 100px;
+    border-radius: 6px;
+    border-color: #2068e561;
+}
+.barcomment input[type=submit]{
+    height: 30px;
+    width: 100px;
+    color: rgb(13, 144, 173);
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    background-color: #ffffff;
+    border: #ffffff;
+    font-size: medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.barcomment input[type=submit]:hover,::selection{
+    background-color: rgb(15, 183, 221);
+    color: #ffffff;
+    cursor: pointer;
+}
+.contacter{
+    display: flex;
+    height: 20px;
+    margin-top: 2rem;
+    justify-content: center;
+    font-size:x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #2068e5;
+    
+}
+/**************************************************
+******************************************************/
+
+.container{
+    background-color: #1d1ac5;
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.background img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    
+}
+.background img:hover {
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+.card{
+    padding: 20px;
+    
+    margin: auto;
+    background-color: #D8E3FA;
+}
+.contain{
+    background-color: #29283f10;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 2px;
+}
+.fa-google{
+    background-color:none;
+    color: #1014e2;
+}
+.fa-instagram{
+    background-color: none;
+    color: rgb(218, 15, 171);
+}
+.fa-whatsapp{
+    background-color: none;
+    color:rgb(10, 197, 45);
+}
+.fa-linkedin-in{
+    background-color: none;
+    color: #1014e2;
+}
+.fa-brands:hover{
+    opacity: 0.4;
+}
+.description{
+    background-color: #dee0e327;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+}
+

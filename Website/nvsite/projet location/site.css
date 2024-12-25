@@ -1,0 +1,334 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color:#363062;
+    --second-color:#F3F8FF;
+    --text-color:#444;
+    --gradient: linear-gradinet(#F6F5F2,#F3D0D7);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line:none;
+    background-color: #dad7d7ef;
+    justify-content: space-around;
+    z-index: 1;
+}
+.logo img {
+    width: 100px;
+    
+}
+.navbar {
+    display: flex;
+}
+.navbar li{
+    position: relative;
+    display: inline;
+    text-decoration-line: none;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.navbar a::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    background-color: var(--second-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition:0.3s ;
+}
+.navbar a:hover::after{
+    width: 90%;
+    margin: auto;
+}
+
+header .icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+.btn-login a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration-line: none;
+}
+.btn-login .sign-in{
+    background: var(--main-color);
+    color: #fff;
+    
+    border-radius: 0.5rem;
+}
+
+.btn-login .sign-in:hover{
+    background: var(--second-color);
+    color: var(--text-color);
+    transition: 0.6s;
+}
+
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    background: url(voiture.jpg);
+    background-position: center right;
+    background-size:cover;
+    display: grid;
+    align-items: center;
+    
+    
+    
+
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color:#97979d;
+}
+.text span{
+    color: var(--main-color);
+    
+
+}
+.text p{
+    margin: 0.5rem ;
+    color: var(--second-color);
+}
+.text{
+    margin-left: 4rem;
+}
+.sociaux {
+    display: flex;
+}
+.sociaux a{
+    padding: 10px;
+    font-size: 2.3rem;
+    border-radius: 2px solid var(--main-color);
+}
+.fa-instagram{
+    color: rgb(212, 45, 53);
+    border-radius: 100%;
+    background-color: #f9f9f9e3;
+}
+.fa-facebook{
+    color: rgb(16, 16, 203);
+    border-radius: 100%;
+    background-color: #e6e6ec;
+}
+.sociaux a .fa-instagram:hover,.fa-facebook:hover {
+    opacity: 0.6;
+    background-color: #e6e6ec;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap:2rem;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    width:70%;
+}
+.inputtext{
+    display: flex;
+    flex-direction: column;
+    
+}
+.inputtext span{
+    font-weight: 700;
+    color: #7B68EE;
+}
+.inputtext input{
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+button{
+    font-weight: 500;
+    border-radius: 5px;
+    width: 120px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color:#ECF9FF;
+}
+
+button:hover{
+    background: var(--main-color) ;
+    color: var(--second-color);
+    cursor: pointer;
+    transition: 0.9s;
+}
+.input input{
+    padding-left: 7px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: var(--second-color);
+    background-color: #4444442a;
+}
+
+
+             /*******************************************comment louer une voiture?********************************************/
+.titre{
+    text-align: center;
+}
+
+.titre h1{
+    font-size: 2rem;
+    color: #363062;
+    padding: 20px;
+}
+
+.include{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.include .b1{
+    text-align: center;
+    margin: 20px;
+}
+
+.include .b1 h2{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    padding: 10px;
+    color: var(--main-color);
+}
+
+.include .b1 p{
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.comment-louer{
+    background:#F0F8FF;
+    margin: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.include .b1 #icon:hover{
+    background:var(--main-color);
+    color: white;
+    cursor:grab;
+    transition: 0.4s;
+}
+
+ #icon{
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+/************************* Services Voiture **********************/
+.Services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+.box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0,0.1);
+}
+.voiture-img{
+    width: 100%;
+    height: 200px;
+}
+.voiture-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+}
+.voiture-img img:hover{
+  transform: scale(1.5);
+  
+  opacity: 1;
+  transition-duration: 1s;
+  cursor: zoom-in;
+}
+.Services .box p{
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+.Services .box h3{
+    font-weight: 500;
+}
+.Services .box  h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 0.2rem 0 0.5rem ;
+}
+.Services .box span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.Services .box .btn{
+    display: flex;
+    justify-content: center;
+    background-color:var(--main-color) ;
+    color: var(--second-color);
+    padding: 6px;
+    text-decoration-line: none;
+    border-radius: 0.5rem;
+}
+.Services .box .btn:hover{
+    background-color: #ECF9FF;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.head-voiture{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-voiture h1{
+    text-align: center; 
+    color: var(--main-color);   
+}

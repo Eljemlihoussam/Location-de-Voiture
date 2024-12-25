@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    background-image: url("Capture\ d\'écran\ 2024-04-09\ 230133.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    
+    
+}
+.Signup {
+    height: 420px;
+    width: 500px;
+    background-color: #363b8d52;
+    margin: 200px auto;
+    border-radius: 10px;
+            
+}
+.title{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 800;
+    color: aliceblue;
+}
+.buttom{
+    
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.buttom input{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    background-color: #24285393;
+    border-radius: 2px;
+    border-color: #424cb629;
+    padding-left: 15px;
+    color: aliceblue;
+}
+
+
+.click input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    background:linear-gradient(90deg,rgb(0, 136, 255),rgb(0, 213, 255));
+    color: aliceblue;
+    font-size:medium;
+    font-family:'Courier New', Courier, monospace;
+    border-color: rgba(161, 209, 217, 0.638);
+    margin-top: 20px;
+}
+.member{
+    display: block;
+    margin-left: 30%;
+    margin-top: 25px;
+    color: aliceblue;
+}
+.member input{
+    background: none;
+    border: none;
+    color: rgb(40, 27, 224);
+}
+.click input:hover{
+    background: rgba(0, 191, 255, 0.233);
+    color: rgb(223, 232, 234);
+    border-color: aliceblue;
+    cursor: pointer;
+    
+}
+.member input:hover{
+    color: rgb(238, 238, 234);
+    
+}
+.buttom input::placeholder{
+    color: aliceblue;
+}
+.buttom input:active{
+    color: rgb(118, 118, 226);
+}
